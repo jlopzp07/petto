@@ -33,7 +33,7 @@ html {
   background-size: cover;
   background-image: linear-gradient(180deg, 
                   rgba(34,40,49, 0.5),
-                  rgba(34, 40, 49, 1)), url('jlopzp07.github.io/petto/Pictures/original-background.jpg');
+                  rgba(34, 40, 49, 1)), url('jlopzp07.github.io/petto//Pictures/original-background.jpg');
 }
 header {
   position: absolute;
@@ -199,8 +199,12 @@ header {
 }
 
 .middle-section a {
-  top: 350px;
+  top: 150px;
   right: 100px;
+}
+
+.track-img {
+  width: 550px;
 }
 
 
