@@ -639,6 +639,9 @@ hr {
   font-size: 1.3rem;
 }
 
+.form-content input {
+  border: none;
+}
 
 .form-content label {
   font-weight: 700;
