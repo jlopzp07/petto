@@ -583,7 +583,7 @@ hr {
 /* CSS Formulario caminador*/
 
 .body-bg {
-  background-image: url("/Pictures/form-bg.png");
+  background-image: url("Pictures/form-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
