@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/styles.css" rel="stylesheet">
+    <title>Formulario Agenda Paseo</title>
+</head>
+
+<body class="body-bg">
+    <header class="form-header">
+        <a href="index.html">
+            <h1 class="logo">PETTO</h1>
+        </a>
+    </header>
+    <div class="form-container">
+        <form class="form-content" action="https://formsubmit.co/25e62937fc79d06a05827a1a5d9ac5ce" method="POST">
+            <h1>Quiero un caminador</h1>
+            <label for="human-name">Nombre humano <br>
+                <input type="text" id="human-name" placeholder="Ingresa el nombre del humano encargado..." name="human-name" required>
+            </label>
+            <label for="dog-name">Nombre peludito <br>
+                <input type="text" id="dog-name" placeholder="Ingresa el nombre de tu peludito..." name="dog-name" required>
+            </label>
+            <label for="dog-age">Edad <br>
+                <input type="number" id="dog-age" min="0" max="25" placeholder="0" name="dog-age" required>
+            </label>
+
+            <label for="service-hours">¿Cuántas horas deseas pasear a tu peludito?
+                <br>
+                <input type="number" id="service-hours" min="1" max="3" placeholder="1" name="service-hours" required>
+            </label>
+            <div class="radio-selector">
+                <label>¿Qué tipo de paseo deseas?</label><br>
+                <div class="radio">
+                    <input id="personalized" type="radio" value="personalizado" name="service-type" checked="checked" required>
+                    <label for="personalized">Personalizado<span class="new-radio"></span>
+                    </label>
+                </div>
+                <div class="radio">
+                    <input id="group" type="radio" value="grupal" name="service-type" required>
+                    <label for="group">Grupal
+                        <span class="new-radio"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="conditions">
+                <label for="condition"> Condiciones físicas
+                    <textarea minlength="4" rows="7" cols="150"
+                        placeholder="Escríbenos si tu peludito tiene alguna condición física, respiratoria o de cualquier índole..." name="conditions"></textarea>
+                </label>
+            </div>
+            <input class="button" type="submit" value="Enviar">
+            <input type="hidden" name="_next" value="http://pettopets.onlinewebshop.net/thanks.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+
+</body>
+
+</html>
