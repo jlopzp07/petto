@@ -26,6 +26,11 @@ html {
   overflow-x: hidden;
 }
 
+.full-container {
+  width: 85%;
+  margin: auto;
+  justify-content: center;
+}
 
 .background-img {
   position: relative;
@@ -36,7 +41,7 @@ html {
   background-size: cover;
   background-image: linear-gradient(180deg, 
                   rgba(34,40,49, 0.5),
-                  rgba(34, 40, 49, 1)), url("../Pictures/original-background.jpg");
+                  rgba(34, 40, 49, 1)), url("/Pictures/original-background.jpg");
 }
 header {
   position: absolute;
@@ -127,7 +132,8 @@ header {
 
 .section2-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+  gap: 7rem;
 }
 
 .section-header2 {
@@ -155,8 +161,6 @@ header {
 }
 
 .section2-p {
-
-  width: 700px;
   margin-top: 50px;
   line-height: 30px;
   font-size: 20px;
@@ -176,7 +180,7 @@ header {
   position: absolute;
   left: 60%;
   top: 90%;
-  width: 100rem;
+  width: 50rem;
   z-index: .10;
 }
 
@@ -197,17 +201,15 @@ header {
 .middle-section {
   margin: 10rem 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
   gap: 8rem;
 }
 
 .middle-section h2{
-  font-size: 50px;
-  width: 600px;
+  font-size: 3rem;
 }
 
 .middle-section p{
-  width: 550px;
   margin-top: 50px;
   line-height: 30px;
   font-size: 20px;
@@ -220,7 +222,7 @@ header {
 }
 
 .track-img {
-  width: 550px;
+  width: 30rem;
 }
 
 .cards-container {
@@ -284,8 +286,8 @@ header {
 }
 
 .section4-content {
-  width: 80%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: auto;
   justify-content: center;
   gap: 2rem;
@@ -293,6 +295,7 @@ header {
 
 .section4-content img {
   width: 40rem;
+  margin: auto;
 }
 
 .section4-text h2 {
@@ -316,10 +319,11 @@ hr {
 
 .footer-information-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
   margin: auto;
   justify-content: center;
   width: 80%;
+  padding-bottom: 5rem;
 }
 
 .footer-information h2{
@@ -470,7 +474,7 @@ hr {
     position: absolute;
     left: 60%;
     top: 90%;
-    width: 50rem;
+    width: 30rem;
     z-index: 0;
   }
   
@@ -554,6 +558,32 @@ hr {
     font-weight: 200;
   }
 
+  .section4-content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .section4-content img {
+    width: 20rem;
+    margin: auto;
+    justify-content: center;
+  }
+  
+  .section4-text h2 {
+    font-size: 2rem;
+    padding-bottom: 3rem;
+  }
+  
+  .section4-text p {
+    width: 100%;
+    line-height: 2rem;
+    font-weight: 200;
+  }
+
   .footer-container h1 {
     display: none;
   }
@@ -577,13 +607,64 @@ hr {
     justify-content: center;
     align-items: center;
   }
+
+  .footer-information {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-information-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+    width: 80%;
+    row-gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  
+  .footer-information ul li,
+  .footer-information h2{
+    font-size: 0.8rem;
+    
+  }
+
+  .footer-information ul li {
+    font-weight: 200;
+  }
+
+  .body-bg {
+    background-image: none !important;
+  }
+
+  .form-container {
+    background-color: var(--darkBlue) !important;
+    border-radius: 0 !important;
+    width: 100% !important;
+    margin-top: 0.8rem !important;
+    
+  }
+
+  .form-container h1  {
+    font-size: 2rem !important;
+  }
+
+  .form-container label {
+    font-size: 1.3rem !important;
+  }
+  .form-content input[type=text] {
+    width: 100% !important;
+  }
+
+  ::placeholder {
+    font-size: .8rem !important;
+  }
 }
 
 
 /* CSS Formulario caminador*/
 
 .body-bg {
-  background-image: url("../Pictures/form-bg.png");
+  background-image: url("/Pictures/form-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -639,9 +720,6 @@ hr {
   font-size: 1.3rem;
 }
 
-.form-content input {
-  border: none;
-}
 
 .form-content label {
   font-weight: 700;
@@ -661,6 +739,10 @@ hr {
   padding-top: 2rem;
 }
 
+.form-content input {
+  border: none;
+}
+
 
 .form-content input[type=radio] {
   width: 25px;
@@ -671,6 +753,7 @@ hr {
 
 ::placeholder {
   opacity: 30%;
+  font-size: 1rem;
 }
 
 
