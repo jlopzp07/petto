@@ -422,6 +422,10 @@ hr {
 
 @media (max-width: 413px) {
 
+  html {
+    overflow-x: hidden;
+  }
+
   .circle {
     display: none;
   }
@@ -430,7 +434,10 @@ hr {
 /*Media query for smartphone*/
 
 @media (max-width: 576px) {
-
+  
+  html {
+    overflow-x: hidden;
+  }
   .navbar {
     visibility: hidden;
   }
