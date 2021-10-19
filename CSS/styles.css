@@ -41,7 +41,7 @@ html {
   background-size: cover;
   background-image: linear-gradient(180deg, 
                   rgba(34,40,49, 0.5),
-                  rgba(34, 40, 49, 1)), url("/Pictures/original-background.jpg");
+                  rgba(34, 40, 49, 1)), url("../Pictures/original-background.jpg");
 }
 header {
   position: absolute;
@@ -664,7 +664,7 @@ hr {
 /* CSS Formulario caminador*/
 
 .body-bg {
-  background-image: url("/Pictures/form-bg.png");
+  background-image: url("../Pictures/form-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
