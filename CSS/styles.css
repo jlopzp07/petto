@@ -682,7 +682,11 @@ hr {
     background-color: var(--darkBlue) !important;
     border-radius: 0 !important;
     width: 100% !important;
-    margin-top: 0.8rem !important;
+    margin-top: 0 !important;
+  }
+
+.form-header {
+    padding: 2rem;
   }
 
   .form-container h1 {
@@ -713,6 +717,17 @@ hr {
 }
 .form-header {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.form-header ion-icon {
+  font-size: 4rem;
+}
+
+.form-header ion-icon:hover {
+  color: var(--orange);
 }
 
 .form-container {
